@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 CC=cc
 
-all: ex1 ex2 ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12
+all: ex1 ex2 ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13
 	
 ex1: ex1.c
 	$(CC) $(CFLAGS) ex1.c -o ex1
@@ -39,5 +39,8 @@ ex11: ex11.c
 ex12: ex12.c
 	$(CC) $(CFLAGS) ex12.c -o ex12
 
+ex13: ex13.c
+	$(CC) $(CFLAGS) ex13.c -o ex13
+
 clean:
-	rm -rf ex1 ex2 ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 *.dSYM
+	rm -rf ex1 ex2 ex3 ex4 ex5 ex6 ex7 ex8 ex9 ex10 ex11 ex12 ex13 *.dSYM
